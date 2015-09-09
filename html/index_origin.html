@@ -1,0 +1,338 @@
+﻿
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <title>Build My PC</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+
+
+    <meta name="keywwords" content="Build-My_PC" />
+    <meta name="description" content="Build-My_PC" />
+
+    <!-- JS -->
+    <script src="js/jquery-1.4.1.min.js" type="text/javascript"></script>
+    <script src="js/jquery.jcarousel.pack.js" type="text/javascript"></script>
+    <script src="js/jquery-func.js" type="text/javascript"></script>
+    <script language="javascript"> 
+   	function submitform(cat){
+      	document.forms["seemore".concat(cat)].submit(); 
+   	}
+    </script>
+    <!-- End JS -->
+
+</head>
+<body>
+    <!-- Shell -->
+    <div class="shell">
+
+        <!-- Header -->
+        <div id="header">
+            <h1 id="logo"><a href="#">Build-My_PC</a></h1>
+
+            <!-- Cart -->
+           
+                <!--login_section-->
+            <!-- End Cart -->
+            <!-- Navigation -->
+            <div id="navigation">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="suggest.html">Suggest Plan</a></li>
+                    <li><a href="#">My Account</a></li>
+                </ul>
+            </div>
+            <!-- End Navigation -->
+        </div>
+        <!-- End Header -->
+        <!-- Main -->
+        <div id="main">
+            <div class="cl">&nbsp;</div>
+
+            <!-- Content -->
+            <div id="content">
+
+
+                <!-- Products -->
+                <div class="products">
+                    <ul>
+                        <!--*show_result*-->
+                    </ul>
+                </div>
+                <!-- End Products -->
+            </div>
+            <!-- End Content -->
+            <!-- Sidebar -->
+            <div id="sidebar">
+
+                <!-- Search -->
+                <div class="box search">
+                    <h2>Search by <span></span></h2>
+                    <div class="box-content">
+
+                        <form action="../generator.php" method="post">
+                            <label>Name</label>
+                            <input type="text" name="searchname" class="field" />
+                            <select name = "category">
+                            	  <option value="All">All Hardware</option>
+                            	  <option value="Cases">Case</option>
+				  <option value="Graphic">Graphic</option>
+				  <option value="HardDrives">HardDrive</option>
+				  <option value="Memory">Memory</option>
+				  <option value="Monitor">Monitor</option>
+				  <option value="MotherBoard">Motherboard</option>
+				  <option value="PowerSupply">Power Supply</option>
+				  <option value="Processor">Processor</option>
+			    </select>
+
+                            <input type="submit" class="search-submit" value="Search" />
+                        </form>
+
+
+
+                        <form method="LINK" action="edit.html">
+                            <input type="submit" value="EDIT data">
+                        </form>
+                        <!--
+                        <label>Category</label>
+                        <select class="field">
+                            <option value="">-- Select Category --</option>
+                        </select>
+                        -->
+                        <!--
+                        <div class="inline-field">
+                            <label>Price</label>
+                            <select class="field small-field">
+                                <option value="">$10</option>
+                            </select>
+                            <label>to:</label>
+                            <select class="field small-field">
+                                <option value="">$50</option>
+                            </select>
+                        </div>
+                        -->
+                        <!--call server function to query -->
+                        </form>
+                    </div>
+                </div>
+                <!-- End Search -->
+                <!-- Categories -->
+ <div class="box categories">
+                <div class="cart clear">
+                    <div class="shadow">
+                        <table width="100%" border="0">
+                            <tr>
+                                <td width="92%">
+                                    <h3 class="fl">Added pieces</h3></li>
+                                </td>
+                                <td width="20%" valign="middle"> <input type="checkbox" class="checkbox"  name="check_all" id="check_all" > </td>
+                            </tr>
+                        </table>
+                        
+                        
+                        <div class="c_list cb" align="left">
+                            <ul>
+                                <li>
+                                    <table>
+                                        <tr>
+                                            <td width="15%"><img src="css/images/cart_img.jpg" width="52" height="44"></td>
+                                            <td width="65%">
+                                                <p>ASUS XXXXX</p>
+                                                <p><span class="lse">$198.00</span></p>
+                                            </td>
+                                            <td width="10%" valign="middle"><a href="#" class="del">delete</a></td>
+                                            <td width="10%"> <input type="checkbox" class="checkbox"  name="check_item" id="check_item"></td>
+                                        </tr>
+                                    </table>
+                                </li>
+                                
+                                <li>
+                                    <table>
+                                        <tr>
+                                            <td width="15%"><img src="css/images/cart_img.jpg" width="52" height="44"></td>
+                                            <td width="65%">
+                                                <p>ASUS XXXXX</p>
+                                                <p><span class="lse">$198.00</span></p>
+                                            </td>
+                                            <td width="10%" valign="middle"><a href="#" class="del">delete</a></td>
+                                            <td width="10%"> <input type="checkbox" class="checkbox"  name="check_item" id="check_item"></td>
+                                        </tr>
+                                    </table>
+                                </li>
+                                <li>
+                                    <table>
+                                        <tr>
+                                            <td width="15%"><img src="css/images/cart_img.jpg" width="52" height="44"></td>
+                                            <td width="65%">
+                                                <p>ASUS XXXXX</p>
+                                                <p><span class="lse">$198.00</span></p>
+                                            </td>
+                                            <td width="10%" valign="middle"><a href="#" class="del">delete</a></td>
+                                            <td width="10%"> <input type="checkbox" class="checkbox"  name="check_item" id="check_item"></td>
+                                        </tr>
+                                    </table>
+                                </li>
+                                <li>
+                                    <table>
+                                        <tr>
+                                            <td width="15%"><img src="css/images/cart_img.jpg" width="52" height="44"></td>
+                                            <td width="65%">
+                                                <p>ASUS XXXXX</p>
+                                                <p><span class="lse">$198.00</span></p>
+                                            </td>
+                                            <td width="10%" valign="middle"><a href="#" class="del">delete</a></td>
+                                            <td width="10%"> <input type="checkbox" class="checkbox"  name="check_item" id="check_item"></td>
+                                        </tr>
+                                    </table>
+                                </li>                     
+                                 <li>
+                                    <table>
+                                        <tr>
+                                            <td width="15%"><img src="css/images/cart_img.jpg" width="52" height="44"></td>
+                                            <td width="65%">
+                                                <p>ASUS XXXXX</p>
+                                                <p><span class="lse">$198.00</span></p>
+                                            </td>
+                                            <td width="10%" valign="middle"><a href="#" class="del">delete</a></td>
+                                            <td width="10%"> <input type="checkbox" class="checkbox"  name="check_item" id="check_item"></td>
+                                        </tr>
+                                    </table>
+                                </li>                  
+                                 <li>
+                                    <table>
+                                        <tr>
+                                            <td width="15%"><img src="css/images/cart_img.jpg" width="52" height="44"></td>
+                                            <td width="65%">
+                                                <p>ASUS XXXXX</p>
+                                                <p><span class="lse">$198.00</span></p>
+                                            </td>
+                                            <td width="10%" valign="middle"><a href="#" class="del">delete</a></td>
+                                            <td width="10%"> <input type="checkbox" class="checkbox"  name="check_item" id="check_item"></td>
+                                        </tr>
+                                    </table>
+                                </li>                  
+                                 <li>
+                                    <table>
+                                        <tr>
+                                            <td width="15%"><img src="css/images/cart_img.jpg" width="52" height="44"></td>
+                                            <td width="65%">
+                                                <p>ASUS XXXXX</p>
+                                                <p><span class="lse">$198.00</span></p>
+                                            </td>
+                                            <td width="10%" valign="middle"><a href="#" class="del">delete</a></td>
+                                            <td width="10%"> <input type="checkbox" class="checkbox"  name="check_item" id="check_item"></td>
+                                        </tr>
+                                    </table>
+                                </li>              
+                                 <li>
+                                    <table>
+                                        <tr>
+                                            <td width="15%"><img src="css/images/cart_img.jpg" width="52" height="44"></td>
+                                            <td width="65%">
+                                                <p>ASUS XXXXX</p>
+                                                <p><span class="lse">$198.00</span></p>
+                                            </td>
+                                            <td width="10%" valign="middle"><a href="#" class="del">delete</a></td>
+                                            <td width="10%"> <input type="checkbox" class="checkbox"  name="check_item" id="check_item"></td>
+                                        </tr>
+                                    </table>
+                                </li>                  
+                                 <li>
+                                    <table>
+                                        <tr>
+                                            <td width="15%"><img src="css/images/cart_img.jpg" width="52" height="44"></td>
+                                            <td width="65%">
+                                                <p>ASUS XXXXX</p>
+                                                <p><span class="lse">$198.00</span></p>
+                                            </td>
+                                            <td width="10%" valign="middle"><a href="#" class="del">delete</a></td>
+                                            <td width="10%"> <input type="checkbox" class="checkbox"  name="check_item" id="check_item"></td>
+                                        </tr>
+                                    </table>
+                                </li>                  
+                                 <li>
+                                    <table>
+                                        <tr>
+                                            <td width="15%"><img src="css/images/cart_img.jpg" width="52" height="44"></td>
+                                            <td width="65%">
+                                                <p>ASUS XXXXX</p>
+                                                <p><span class="lse">$198.00</span></p>
+                                            </td>
+                                            <td width="10%" valign="middle"><a href="#" class="del">delete</a></td>
+                                            <td width="10%"> <input type="checkbox" class="checkbox"  name="check_item" id="check_item"></td>
+                                        </tr>
+                                    </table>
+                                </li>                      
+                                       </ul>
+                        </div>
+                        <div class="cart_bg">
+                            <table width="100%" border="0">
+                                <tr>
+                                    <td width="3%"></td>
+                                    <td width="25%"><input type="checkbox" class="checkbox" id="box_all"> Select All</td>
+                                    <td width="49%">
+                                        <p> <span class="pl15">Total：</span><span class="ff6">$250.99</span></p>
+                                    </td>
+                                    <td width="10%"><button class="submit">check compatibility</button></td>
+                                    <td width="3%"></td>
+                                </tr>
+                            </table>
+                        </div>
+                        
+                    </div>  
+                </div>
+            
+            </div>
+                <!-- End Categories -->
+
+            </div>
+            <!-- End Sidebar -->
+
+            <div class="cl">&nbsp;</div>
+        </div>
+        <!-- End Main -->
+        <!-- Side Full -->
+        <div class="side-full">
+
+            <!-- More Products -->
+            <div class="more-products">
+                <div class="more-products-holder">
+                    <ul>
+                        <li><a href="#"><img src="css/images/small1.jpg" alt="" /></a></li>
+                        <li><a href="#"><img src="css/images/small2.jpg" alt="" /></a></li>
+                        <li><a href="#"><img src="css/images/small3.jpg" alt="" /></a></li>
+                        <li><a href="#"><img src="css/images/small1.jpg" alt="" /></a></li>
+                        <li><a href="#"><img src="css/images/small2.jpg" alt="" /></a></li>
+                        <li><a href="#"><img src="css/images/small3.jpg" alt="" /></a></li>
+                        <li><a href="#"><img src="css/images/small1.jpg" alt="" /></a></li>
+                        <li><a href="#"><img src="css/images/small2.jpg" alt="" /></a></li>
+                        <li><a href="#"><img src="css/images/small3.jpg" alt="" /></a></li>
+                        <li><a href="#"><img src="css/images/small1.jpg" alt="" /></a></li>
+                        <li class="last"><a href="#"><img src="css/images/small2.jpg" alt="" /></a></li>
+                    </ul>
+                </div>
+                <div class="more-nav">
+                    <a href="#" class="prev">previous</a>
+                    <a href="#" class="next">next</a>
+                </div>
+            </div>
+            <!-- End More Products -->
+
+
+        </div>
+        <!-- End Side Full -->
+        <!-- Footer -->
+        <div id="footer">
+            <p class="right">
+                &copy; Build-My_PC
+
+            </p>
+        </div>
+        <!-- End Footer -->
+
+    </div>
+    <!-- End Shell -->
+
+
+</body>
+</html>

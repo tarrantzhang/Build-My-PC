@@ -1,0 +1,204 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<title>Product</title>
+	<link rel="stylesheet" href="../css/style.css" type="text/css" media="all" />
+	<!--[if lte IE 6]><link rel="stylesheet" href="css/ie6.css" type="text/css" media="all" /><![endif]-->
+	
+	<meta name="keywwords" content="Build-My_PC" />
+	<meta name="description" content="Build-My_PC" />
+	
+	<!-- JS -->
+	<script src="js/jquery-1.4.1.min.js" type="text/javascript"></script>	
+	<script src="js/jquery.jcarousel.pack.js" type="text/javascript"></script>	
+	<script src="js/jquery-func.js" type="text/javascript"></script>	
+	<!-- End JS -->
+	   <script type="text/javascript" src="js/jquery-1.7.2.js"></script>
+    <script type="text/javascript">
+        function MoveBox(obj) {
+            var divTop = $(obj).offset().top;
+            var divLeft = $(obj).offset().left;
+            $(obj).css({
+                       "position": "absolute",
+                       "z-index": "500",
+                       "left": divLeft + "px",
+                       "top": divTop + "px"
+                       });
+                       $(obj).animate({
+                                      "left": ($("#productiframe").offset().left - $("#productiframe").width()) + "px",
+                                      "top": ($(document).scrollTop() + 30) + "px",
+                                      "width": "80px",
+                                      "height": "30px"
+                                      },
+                                      1300,
+                                      function() {
+                                      $(obj).animate({
+                                                     "left": $("#productiframe").offset().left + "px",
+                                                     "top": $("#productiframe").offset().top + "px",
+                                                     "width": "50px",
+                                                     "height": "25px"
+                                                     },500).fadeTo(0, 0.1).hide(0);
+                                   });
+        }
+    </script>
+</head>
+<body>
+
+	
+<!-- Shell -->	
+<div class="shell">
+	
+	<!-- Header -->	
+	<div id="header">
+		<h1 id="logo"><a href="#">Build-My_PC</a></h1>
+	
+		<!-- Cart -->
+		<div id="cart">
+      		          <iframe id="homeiframe" src="../login_status.html" height="40" width="260" frameborder="0"></iframe>
+          	  </div>
+		<!-- End Cart -->
+		
+		<!-- Navigation -->
+		<div id="navigation">
+			<ul>
+			    <li><a href="../index.html" class="active">Home</a></li>
+			    <li><a href="../suggest.html">Suggest Plan</a></li>
+			</ul>
+		</div>
+		<!-- End Navigation -->
+	</div>
+	<!-- End Header -->
+	<!-- Main -->
+	<div id="main">
+		<div class="cl">&nbsp;</div>
+		
+		<!-- Content -->
+		<div id="pcontent">
+			
+			<!-- Products -->
+			<div class="pproducts">
+				<div class="cl">&nbsp;</div>
+				<p>
+				<ul>
+				    <li>
+				    	<a href="#"><img src="http://images17.newegg.com/is/image/newegg/11-156-304-TS?$S180W$" alt="" /></a>
+				    	<div class="pproduct-info">
+				    		<h3>Cases</h3>
+				    		<div class="pproduct-desc">
+							<p>Brand: Raidmax </p>
+				    			<p>Name: RAIDMAX Scorpio V ATX-503WB Black Steel _ Plastic ATX Mid Tower Computer Case</p>
+				    			<p>Price: <strong class="price">$74</strong></p>
+				    			
+				    			<p>            <form action="../../cart.php" method="post">
+                <input type= "hidden" name = "cata" value = "Cases">
+                <input type= "hidden" name = "site" value = "products/RAIDMAX Scorpio V ATX-503WB Black Steel _ Plastic ATX Mid Tower Computer Case.html">
+                <input type= "hidden" name = "image" value = "http://images17.newegg.com/is/image/newegg/11-156-304-TS?$S180W$">
+                <input type= "hidden" name = "name" value = "RAIDMAX Scorpio V ATX-503WB Black Steel _ Plastic ATX Mid Tower Computer Case">
+                <input type= "hidden" name = "price" value = "74">
+                <input type="hidden" id="txtUrl" name="txtUrl" value="" >
+                 <script>
+                document.getElementById("txtUrl").value = window.location.href;
+                </script> 
+                <input type="image" src="../css/images/watermarked_cover-2.png" width = "60" height = "50" alt="Submit" onClick = "MoveBox(this)"/>
+            </form></p>
+				    		</div>
+				    	</div>
+				    	
+			    	</li>
+			    	</ul>
+				
+			    	</p>
+				
+				<!--<div class="cl">&nbsp;</div>-->
+			</div>
+			<!-- End Products -->
+					
+		<!-- Cart -->
+		<div id="box-cart">
+			<iframe id="productiframe" src="../cart.html" width="226" height="500" scrolling="yes"></iframe>
+          	  </div>
+		<!-- End Cart -->
+		</div>
+		<!-- End Content -->
+
+		<div class="cl">&nbsp;</div>
+	</div>
+	<!-- End Main -->
+
+	<div class = "reviews">
+		<h4>COMMENTS</h4>
+		<form action="../../write_comment.php" method="post" id="commentform">
+                            <label>Write a Comment:</label>
+                            <input type = "hidden" name = "hardwareName" value = "RAIDMAX Scorpio V ATX-503WB Black Steel _ Plastic ATX Mid Tower Computer Case"/>
+                            <input type="hidden" id="theUrl" name="theUrl" value="" />
+                            <input type = "hidden" name = "cata" value = "Cases"/>
+		            <script>
+		            document.getElementById("theUrl").value = window.location.href;
+		            </script> 
+                </form>
+                <textarea rows = "8" cols = "80" name = "writecomment" form = "commentform"></textarea>
+                <input type="submit" value="Submit Comment" form = "commentform"/>
+		<ul>
+		
+		</ul>
+		
+	</div>
+	
+	<!-- Side Full -->
+	<div class="side-full">
+		<!-- More Products -->
+		<div class="more-products">
+			<div class="more-products-holder">
+				<ul>
+				    <li><a href="#"><img src="css/images/small1.jpg" alt="" /></a></li>
+				    <li><a href="#"><img src="css/images/small2.jpg" alt="" /></a></li>
+				    <li><a href="#"><img src="css/images/small3.jpg" alt="" /></a></li>
+				    <li><a href="#"><img src="css/images/small1.jpg" alt="" /></a></li>
+				    <li><a href="#"><img src="css/images/small2.jpg" alt="" /></a></li>
+				    <li><a href="#"><img src="css/images/small3.jpg" alt="" /></a></li>
+				    <li><a href="#"><img src="css/images/small1.jpg" alt="" /></a></li>
+				    <li><a href="#"><img src="css/images/small2.jpg" alt="" /></a></li>
+				    <li><a href="#"><img src="css/images/small3.jpg" alt="" /></a></li>
+				    <li><a href="#"><img src="css/images/small1.jpg" alt="" /></a></li>
+				    <li class="last"><a href="#"><img src="css/images/small2.jpg" alt="" /></a></li>
+				</ul>
+			</div>
+			<div class="more-nav">
+				<a href="#" class="prev">previous</a>
+				<a href="#" class="next">next</a>
+			</div>
+		</div>
+		<!-- End More Products -->
+		
+
+		
+	</div>
+	<!-- End Side Full -->
+	
+	<!-- Footer -->
+	<div id="footer">
+		<p class="left">
+			<a href="#">Home</a>
+			<span>|</span>
+			<a href="#">Support</a>
+			<span>|</span>
+			<a href="#">My Account</a>
+			<span>|</span>
+			<a href="#">The Store</a>
+			<span>|</span>
+			<a href="#">Contact</a>
+		</p>
+		<p class="right">
+			&copy; Build-My_PC
+			 
+		</p>
+	</div>
+	<!-- End Footer -->
+	
+</div>	
+<!-- End Shell -->
+	
+	
+</body>
+</html>

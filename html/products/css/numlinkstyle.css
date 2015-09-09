@@ -1,0 +1,35 @@
+@charset "utf-8";
+/* CSS Document */
+
+.numlinks, .numlinks-inactive {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:10px;
+	color:#336699;
+}
+
+.numlinks-inactive {
+	color:#DDDDDD;
+}
+
+.numhighlight {
+	background-color:#C6FFC9;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:bold;
+	color:#339900;
+}
+
+.t-border {
+	border-collapse:collapse;
+}
+
+.td-border {
+	width:23px;
+	height:25px;
+	padding-left:2px;
+	padding-right:2px;
+	text-align:center;
+	vertical-align:middle;
+	border:#EEEEEE solid; 
+	border-width:1px;
+}	

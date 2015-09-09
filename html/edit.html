@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add new hardware</title>
+</head>
+<body>
+    
+    <h2>hardware information</h2>
+    <form action="../insert.php" method="post" >
+        Price: <input type="number" name="Price"><br>
+        Brand: <input type="text" name="Brand"><br>
+        Name: <input type="text" name="Name"><br>
+        Chipset: <input type="text" name="Chipset"><br>
+        ChipsetMan: <input type="text" name="ChipsetMan"><br>
+        Socket: <input type="text" name="Socket"><br>
+        Usb: <input type="text" name="Usb"><br>
+        Image: <input type="text" name="Image"><br>
+        <input type="submit" value="Add to Database">
+    </form>
+    <form action="../delete.php" method="post" >
+        Name: <input type="text" name="Name"><br>
+        <input type="submit" value="remove from Database">
+    </form>
+    <form action="../update.php" method= "post">
+        Price: <input type="number" name="Price"><br>
+        Brand: <input type="text" name="Brand"><br>
+        Name: <input type="text" name="Name"><br>
+        Chipset: <input type="text" name="Chipset"><br>
+        ChipsetMan: <input type="text" name="ChipsetMan"><br>
+        Socket: <input type="text" name="Socket"><br>
+        Usb: <input type="text" name="Usb"><br>
+        Image: <input type="text" name="Image"><br>
+        <input type="submit" value="Update Database">
+    </form>
+</body>
+</html>

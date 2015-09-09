@@ -1,0 +1,17 @@
+<li>
+<p>User: *RUSERNAME*        Date: *RDATE*</p>
+<form action = "../../delete_comment.php" method = "post">
+<input type = "hidden" name = "hardwareName" value = "<!--product_name-->" />
+<input type = "hidden" name = "category" value = "<!--product_category-->" />
+<input type = "hidden" name = "username" value = "*RUSERNAME*" />
+<input type = "hidden" name = "date" value = "*RDATE*" />
+<input type = "hidden" name = "id" value = "*ID*" />
+<input type="hidden" id="*ID*Url" name="*ID*Url" value="" >
+<script>
+document.getElementById("*ID*Url").value = window.location.href;
+</script>
+<!--delete_comment-->
+</form>
+<p>*RCONTENT*</p>
+<br>
+</li>

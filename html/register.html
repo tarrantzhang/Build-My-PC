@@ -1,0 +1,103 @@
+<html>
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <title>Register Account</title>
+        <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+    </head>
+    
+<body>
+        <!-- Shell -->
+        <div class="shell">
+            
+            <!-- Header -->
+            <div id="header">
+                <h1 id="logo"><a href="#">Build-My_PC</a></h1>
+            </div>
+            <!-- End Header -->
+            <!-- Main -->
+            <div id="main">
+                <div class="cl">&nbsp;</div>
+                
+
+    <form method="post" action="../insertuser.php" name="send" onSubmit="return Check()">
+        
+        <td width="210" class="p11" valign="bottom"><font color="#FF6699">*</font>is required</td>
+     <p><h5>Account Name:
+        
+        <input type="text" name="username" size="20" class="c3a">
+            <font color="#FF6699">*</font>
+            </h5></p>
+            <p><h5>Password:
+            
+            <input type="password" name="password" size="20" class="c3a">
+                <font color="#FF6699">*</font></h5></p>
+                <p><h5>Confirm Password:
+                <input name="cpassword" type="password" id="cpassword">
+                    <font color="#FF6699">*</font></h5></p>
+                    <p><h5>email:<label>
+                        <input name="email" type="text" id="email">
+                            </label>
+                    <font color="#FF6699">*</font></h5></p>
+                    
+                    <label></label>
+
+
+                        <input type="submit" value="Next" >
+                            <input type="reset" value="Reset">
+                                </p>
+    </form>
+    <script language="javascript">
+        function Check()
+        {
+            if (document.send.username.value=="")
+            {
+                window.alert('Input Username!');
+                
+                return false;
+            }
+            if (document.send.username.value.length<4)
+            {
+                window.alert('Username must be longer than 4 characters!');
+                
+                return false;
+            }
+            if (document.send.password.value=="")
+            {
+                alert('Please Input Password!');
+                
+                return false;
+            }
+            if (document.send.password.value.length<6)
+            {
+                alert('Password must be longer than 6 characters!');
+                
+                return false;
+            }
+            if (document.send.password.value!= document.send.cpassword.value)
+            {
+                alert('Password and Confirming Password do not match!');
+                return false;
+            }
+            if (document.send.email.value=="")
+            {
+                alert('Input Email!');
+                
+                return false;
+            }
+            if(document.send.email.value.indexOf("@")==-1)
+            {
+                alert('Invalid Email Address!'); return false;
+            }
+            if (document.send.code.value=="")
+            {
+                alert('Please input Verification Code!');
+                
+                return false;
+            }
+            return true;
+        }
+    </script>
+    </div>
+            </div>
+    </body>
+</html>
